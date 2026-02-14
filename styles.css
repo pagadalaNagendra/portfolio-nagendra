@@ -1340,12 +1340,7 @@ section {
     box-shadow: 0 10px 20px rgba(27, 60, 83, 0.3);
 }
 
-.contact-form {
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
+
 
 .form-group {
     margin-bottom: 20px;

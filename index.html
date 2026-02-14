@@ -7,6 +7,32 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .read-more-link {
+            color: inherit;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .read-more-link:hover {
+            color: #007bff; /* Optional: highlight on hover, or use inherit for no change */
+        }
+        /* Add spacing between timeline line and card */
+        .timeline-content {
+            margin-left: 32px; /* Adjust as needed for your design */
+            text-align: left;  /* Ensure all content is left-aligned */
+        }
+        .timeline-content * {
+            text-align: left !important; /* Force left alignment for all children */
+        }
+        /* Optional: Responsive adjustment for smaller screens */
+        @media (max-width: 600px) {
+            .timeline-content {
+                margin-left: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -75,12 +101,10 @@
                     </h1>
                     <h2 class="hero-subtitle">
                         <span class="subtitle-line">Full Stack Developer</span>
-                        <span class="subtitle-separator">&</span>
-                        <span class="subtitle-line">Research Engineer</span>
                     </h2>
                     <p class="hero-description">
-                        <span class="description-line">Passionate about creating innovative web solutions and contributing to smart city technologies.</span>
-                        <span class="description-line">Currently working as a Research Engineer at IIIT Hyderabad's Smart City Research Center.</span>
+                        <span class="description-line">I am a dedicated coder driven by a curiosity for understanding the intricacies of large-scale systems Currently serving as 
+                            a Research Engineer at the Smart City Living Lab within the International Institute of Information Technology, Hyderabad, I actively contribute to innovative projects at the intersection of diverse technological domains.</span>
                     </p>
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
@@ -102,7 +126,7 @@
                             <span class="stat-label">Hackathon Wins</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number" data-count="1">0</span>
+                            <span class="stat-number" data-count="2">0</span>
                             <span class="stat-label">Years Experience</span>
                         </div>
                     </div>
@@ -193,7 +217,7 @@
                             <span class="stat-label">Hackathon Wins</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">1+</span>
+                            <span class="stat-number">2+</span>
                             <span class="stat-label">Years Experience</span>
                         </div>
                     </div>
@@ -249,24 +273,30 @@
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Research Intern</h3>
-                            <span class="company">IIIT Hyderabad - RCTS (Raj Reddy Center for Technology and Society) </span>
-                            <span class="duration">AUG 2023 - DEC 2023</span>
-                            <span class="location">Remote</span>
+                            <h3>Smart City Research Center, IIIT Hyderabad</h3>
+                            <span class="duration" style="font-weight:bold;">Jan 2024 – Present</span>
+                            <span class="role" style="margin-left:12px; font-weight:bold;">Research Engineer</span>
                         </div>
-                        <p>Created user interfaces for websites and handled their responsive behavior. Focused on delivering optimal user experiences across different devices and screen sizes.</p>
+                        <ul style="margin-top: 12px;">
+                            <li>Worked on developing full-stack web applications for smart city platforms and research projects: built responsive frontend interfaces and supported backend service development.</li>
+                            <li>Implemented authentication, access control, and API integrations across applications.</li>
+                            <li>Collaborated with team members to design, develop, and improve system features.</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>Research Engineer</h3>
-                            <span class="company">IIIT Hyderabad - SCRC Smart City Living Lab</span>
-                            <span class="duration">January 2024 - Present</span>
-                            <span class="location">Onsite</span>
+                            <h3>Raj Reddy Center for Technology and Society, IIIT Hyderabad</h3>
+                            <span class="duration" style="font-weight:bold;">Aug 2023 – Jan 2024</span>
+                            <span class="role" style="margin-left:12px; font-weight:bold;">Research Intern</span>
                         </div>
-                        <p>Contributing to ongoing projects by developing front-end and back-end web pages for smart city initiatives. Working on IoT dashboards, sensor platforms, and city operating systems.</p>
+                        <ul style="margin-top: 12px;">
+                            <li>Developed user interfaces for web applications and websites.</li>
+                            <li>Handled responsive design to ensure proper display across different devices.</li>
+                            <li>Assisted in improving layout structure and visual consistency.</li>
+                        </ul>
                     </div>
                 </div>
                 
@@ -279,68 +309,196 @@
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
+
+                <!-- City Operating Platform (ctOP) -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3>Sensor Load Simulator Platform</h3>
+                        <h3>City Operating Platform (ctOP)</h3>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://ctop.iiit.ac.in" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                    <p>Web-based application to test performance and scalability of oneM2M implementations. Provides real-time simulation analytics for performance comparison.</p>
+                    <p>
+                        <span class="desc-short">
+                            Built a lightweight platform adhering to oneM2M standards to integrate diverse IoT devices within smart city infrastructure.
+                        </span>
+                        <span class="desc-full" style="display:none;">
+                            Built a lightweight platform adhering to oneM2M standards to integrate diverse IoT devices within smart city infrastructure. Implemented user authentication, access control, and a user-friendly interface for secure and standardized device and data management.
+                        </span>
+                        <a href="javascript:void(0);" class="read-more-link">Read More</a>
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">oneM2M</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                </div>
+
+                <!-- Smart City Living Chatbot -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Smart City Living Chatbot</h3>
+                        <div class="project-links">
+                            <a href="https://smartcitylivinglab.iiit.ac.in/home" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p>
+                        <span class="desc-short">
+                            Designed and developed an intelligent chatbot integrated with an IoT monitoring platform to analyze historical sensor data and predict real-time conditions.
+                        </span>
+                        <span class="desc-full" style="display:none;">
+                            Designed and developed an intelligent chatbot integrated with an IoT monitoring platform to analyze historical sensor data and predict real-time conditions. The system identifies recent trends and behavioral patterns in sensor readings to estimate current values and short-term changes, improving live sensor insights and enabling early anomaly detection.
+                        </span>
+                        <a href="javascript:void(0);" class="read-more-link">Read More</a>
+                    </p>
                     <div class="tech-stack">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">FastAPI</span>
                         <span class="tech-tag">PostgreSQL</span>
                         <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Rasa</span>
+                        <span class="tech-tag">Machine Learning</span>
                     </div>
                 </div>
 
+                <!-- License Manager -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>License Manager</h3>
+                    </div>
+                    <p>
+                        <span class="desc-short">
+                            Designed and implemented a License Manager Platform for Smart City Research Center applications, enabling centralized tracking of software licenses, automated renewals, and compliance enforcement.
+                        </span>
+                        <span class="desc-full" style="display:none;">
+                            Designed and implemented a License Manager Platform for Smart City Research Center applications, enabling centralized tracking of software licenses, automated renewals, and compliance enforcement. Improved resource utilization and reduced administrative overhead by streamlining license allocation and monitoring.
+                        </span>
+                        <a href="javascript:void(0);" class="read-more-link">Read More</a>
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Cryptography</span>
+                    </div>
+                </div>
+
+                <!-- Smart City Research Center Website -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Smart City Research Center Website</h3>
+                        <div class="project-links">
+                            <a href="https://smartcityresearch.iiit.ac.in/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p>
+                        <span class="desc-short">
+                            Created a user-friendly website for the Smart City Research Center.
+                        </span>
+                        <span class="desc-full" style="display:none;">
+                            Created a user-friendly website for the Smart City Research Center. Updated and maintained the company website to ensure up-to-date information and optimal user experience.
+                        </span>
+                        <a href="javascript:void(0);" class="read-more-link">Read More</a>
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Jinja</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Django</span>
+                    </div>
+                </div>
+
+                <!-- Maintenance Dashboard -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Maintenance Dashboard</h3>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://smartcitylivinglab.iiit.ac.in/maintenance-dashboard" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                    <p>Dashboard for monitoring various IoT nodes across smart city campus. Provides real-time status tracking and maintenance insights.</p>
+                    <p>
+                        <span class="desc-short">
+                            At Smart City, we deploy various nodes across the campus of various verticals and maintenance of these nodes is crucial.
+                        </span>
+                        <span class="desc-full" style="display:none;">
+                            At Smart City, we deploy various nodes across the campus of various verticals (WE, SL, SL-Energy Meter, AQ, WM-WD, WM-WF-S, WM-WF-R, WM-WF-K, SR-AC) and maintenance of these nodes is crucial. The maintenance dashboard makes it easy to understand and identify if a node is in active or inactive state.
+                        </span>
+                        <a href="javascript:void(0);" class="read-more-link">Read More</a>
+                    </p>
                     <div class="tech-stack">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">Node.js</span>
                         <span class="tech-tag">Express</span>
                         <span class="tech-tag">PostgreSQL</span>
                         <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">Python</span>
                     </div>
                 </div>
 
+                <!-- Inventory Management System -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Inventory Management System</h3>
                         <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="http://smartcityresearch.iiit.ac.in:8286/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
-                    <p>Web-based inventory dashboard with role-based access, component tracking, stock management, and real-time notifications.</p>
+                    <p>
+                        <span class="desc-short">
+                            Developed a web-based inventory management dashboard with role-based access control for System Admin, Admin, and User roles.
+                        </span>
+                        <span class="desc-full" style="display:none;">
+                            Developed a web-based inventory management dashboard with role-based access control for System Admin, Admin, and User roles. Features include efficient component tracking, stock management, usage analytics, critical stock alerts, real-time notifications, request logging, defective item tracking, and detailed activity logs with timestamps.
+                        </span>
+                        <a href="javascript:void(0);" class="read-more-link">Read More</a>
+                    </p>
                     <div class="tech-stack">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
                         <span class="tech-tag">MongoDB</span>
                         <span class="tech-tag">Chart.js</span>
                         <span class="tech-tag">Material-UI</span>
                     </div>
                 </div>
 
+                <!-- Sensor Load Simulator Platform -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Sensor Load Simulator Platform</h3>
+                    </div>
+                    <p>
+                        <span class="desc-short">
+                            The Sensor Load Simulator is a web-based application designed and developed to test the performance, scalability, and data-handling capabilities of oneM2M implementations.
+                        </span>
+                        <span class="desc-full" style="display:none;">
+                            The Sensor Load Simulator is a web-based application designed and developed to test the performance, scalability, and data-handling capabilities of oneM2M implementations like OM2M, Mobius, and CCSP. It identifies platform limitations and provides real-time simulation analytics for performance comparison.
+                        </span>
+                        <a href="javascript:void(0);" class="read-more-link">Read More</a>
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Indoor Air Quality Dashboard -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Indoor Air Quality Dashboard</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
                     </div>
-                    <p>Live visualization dashboard for monitoring real-time room temperature, CO2 levels, and humidity with interactive charts.</p>
+                    <p>
+                        Live visualization dashboard for monitoring real-time room temperature, CO2 levels, and humidity with interactive charts.
+                    </p>
                     <div class="tech-stack">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">CSS</span>
@@ -348,15 +506,14 @@
                     </div>
                 </div>
 
+                <!-- Face Recognition Attendance System -->
                 <div class="project-card">
                     <div class="project-header">
                         <h3>Face Recognition Attendance System</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
                     </div>
-                    <p>Automated attendance tracking system using facial recognition technology to streamline the attendance process.</p>
+                    <p>
+                        Automated attendance tracking system using facial recognition technology to streamline the attendance process.
+                    </p>
                     <div class="tech-stack">
                         <span class="tech-tag">HTML</span>
                         <span class="tech-tag">CSS</span>
@@ -364,22 +521,6 @@
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>City Operating Platform (ctOP)</h3>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <p>Lightweight platform adhering to oneM2M standards for integrating diverse IoT devices within smart city infrastructure.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">JWT</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -453,20 +594,21 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required style="display:none;">
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required style="display:none;">
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Subject" required style="display:none;">
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <textarea name="message" rows="5" placeholder="Your Message" required style="display:none;"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary" style="display:none;">Send Message</button>
+                        <div id="form-status" style="margin-top:10px; display:none;"></div>
                     </form>
                 </div>
             </div>
@@ -481,5 +623,63 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+// Read More/Less functionality for project cards
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.project-card').forEach(function(card) {
+        var link = card.querySelector('.read-more-link');
+        if (!link) return;
+        var shortDesc = card.querySelector('.desc-short');
+        var fullDesc = card.querySelector('.desc-full');
+        link.addEventListener('click', function() {
+            if (fullDesc.style.display === 'none') {
+                fullDesc.style.display = '';
+                shortDesc.style.display = 'none';
+                link.textContent = 'Read Less';
+            } else {
+                fullDesc.style.display = 'none';
+                shortDesc.style.display = '';
+                link.textContent = 'Read More';
+            }
+        });
+    });
+
+    // Contact form handler using Formspree
+    var contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var formStatus = document.getElementById('form-status');
+            formStatus.textContent = 'Sending...';
+            fetch('https://formspree.io/f/xdoqzqzq', { // Replace with your Formspree endpoint if needed
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json'
+                },
+                body: new FormData(contactForm)
+            }).then(function(response) {
+                if (response.status === 404) {
+                    formStatus.textContent = 'Form not found. Please contact the site owner directly.';
+                } else if (response.ok) {
+                    formStatus.textContent = 'Thank you! Your message has been sent.';
+                    contactForm.reset();
+                } else {
+                    response.json().then(function(data) {
+                        if (data && data.errors && data.errors.length > 0) {
+                            formStatus.textContent = data.errors.map(function(e){return e.message;}).join(', ');
+                        } else {
+                            formStatus.textContent = 'Oops! There was a problem sending your message.';
+                        }
+                    }).catch(function() {
+                        formStatus.textContent = 'Oops! There was a problem sending your message.';
+                    });
+                }
+            }).catch(function() {
+                formStatus.textContent = 'Oops! There was a problem sending your message.';
+            });
+        });
+    }
+});
+</script>
 </body>
 </html>
